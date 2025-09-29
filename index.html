@@ -7,14 +7,23 @@
 </head>
 <body style="font-family: Arial; text-align: center; padding: 50px;">
   <h1>Want a copy of my resume?</h1>
-  <p>Enter your email below and I’ll send it to you.</p>
+  <p>Fill in your details below and I’ll send it to you.</p>
   
-  <form
-  action="https://formspree.io/f/mblzgdkb"
-  method="POST"
->
-    <input type="email" name="email" placeholder="Enter your email" required style="padding:10px; width:250px;">
-    <button type="submit" style="padding:10px 20px;">Send Resume</button>
+  <form action="https://formspree.io/f/yourFormID" method="POST">
+    <!-- Name -->
+    <input type="text" name="name" placeholder="Your Name" required 
+           style="padding:10px; width:250px; margin:8px 0;"><br>
+
+    <!-- Company -->
+    <input type="text" name="company" placeholder="Your Company" required 
+           style="padding:10px; width:250px; margin:8px 0;"><br>
+
+    <!-- Email -->
+    <input type="email" name="email" placeholder="Your Email" required 
+           style="padding:10px; width:250px; margin:8px 0;"><br>
+
+    <!-- Submit -->
+    <button type="submit" style="padding:10px 20px; margin-top:10px;">Send Resume</button>
   </form>
 </body>
 </html>
